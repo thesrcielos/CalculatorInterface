@@ -13,7 +13,7 @@ export const Calculator = () => {
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState(null);
   const apiUrl = import.meta.env.VITE_BACKEND_URL;
-
+  console.log(import.meta.env.VITE_BACKEND_URL);
   const calculate = async () => {
     const res = await fetch(apiUrl + "/calculate", {
       method: "POST",
