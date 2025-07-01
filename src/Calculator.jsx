@@ -12,6 +12,7 @@ const buttons = [
 export const Calculator = () => {
   const [expression, setExpression] = useState("");
   const [result, setResult] = useState(null);
+  console.log("ENV:", import.meta.env);
   const apiUrl = import.meta.env.VITE_BACKEND_URL;
   console.log(import.meta.env.VITE_BACKEND_URL);
   const calculate = async () => {
